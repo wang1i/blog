@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wl.mapper.BlogMapper">
+    <resultMap id="BlogResultMap" type="com.wl.pojo.Blog">
+        <id property="id" column="bid"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="firstPicture" column="firstPicture"/>
+        <result property="flag" column="flag"/>
+        <result property="views" column="views"/>
+        <result property="appreciation" column="appreciation"/>
+        <result property="shareStatement" column="shareStatement"/>
+        <result property="commentable" column="commentable"/>
+        <result property="published" column="published"/>
+        <result property="recommend" column="recommend"/>
+        <result property="description" column="description"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+
+        <association property="type" javaType="Type">
+            <id property="id" column="typeId"/>
+            <result property="name" column="typeName"/>
+        </association>
+
+        <association property="user" javaType="User">
+            <id property="id" column="uid"/>
+            <result property="nickname" column="nickname"/>
+            <result property="username" column="username"/>
+            <result property="password" column="password"/>
+            <result property="email" column="email"/>
+            <result property="avatar" column="avatar"/>
+            <result property="type" column="type"/>
+            <result property="createTime" column="u_createTime"/>
+            <result property="updateTime" column="u_updateTime"/>
+        </association>
+
+<!--        <collection property="comments" ofType="Comment">-->
+<!--            <id property="id" column="id"/>-->
+<!--            <result property="nickname" column="nickname"/>-->
+<!--            <result property="email" column="email"/>-->
+<!--            <result property="content" column="content"/>-->
+<!--            <result property="avatar" column="avatar"/>-->
+<!--            <result property="createTime" column="createTime"/>-->
+<!--            <collection property="replyComments" ofType="Comment" column="id" select="com.wl.mapper.CommentMapper.getChildCommentsById"/>-->
+<!--        </collection>-->
+
+<!--        <collection property="tags" ofType="Tag">-->
+<!--            <id property="id" column="id"/>-->
+<!--            <result property="name" column="name"/>-->
+<!--        </collection>-->
+
+    </resultMap>
+
+    <select id="countBlogs" resultType="Integer">
+        select COUNT(*) from blog
+    </select>
+
+    <select id="getUpdateYears" resultType="String">
+        select distinct year(updateTime) as archiveYear from blog order by archiveYear
+    </select>
+
+    <select id="getBlogListByUpdateYear" resultMap ="BlogResultMap">
+        select  * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+        where year(blog.updateTime) = #{year}
+    </select>
+
+    <select id="getBlogIdByCreateTime" parameterType="Date" resultType="Long">
+        select bid from blog where createTime = #{createTime}
+    </select>
+
+    <select id="getBlogById" parameterType="Long" resultMap="BlogResultMap">
+        select  * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+        where blog.bid = #{id}
+    </select>
+
+    <select id="getAllBlogList"  resultMap="BlogResultMap">
+        select  * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+    </select>
+
+    <select id="getFilterBlogList"  resultMap="BlogResultMap">
+        select  * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+        where 1=1
+            <if test= "param1 != null">
+                and blog.title=#{param1}
+            </if>
+            <if test= "param2 != null">
+                and blog.type_id=#{param2}
+            </if>
+            <if test= "param3 != null">
+                and blog.recommend=1
+            </if>
+    </select>
+
+    <select id="getRecommendBlogList" resultMap="BlogResultMap">
+        select  * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+        where blog.recommend = 1
+        order by blog.updateTime desc
+    </select>
+
+    <select id="getNewBlogList" parameterType="Long" resultMap="BlogResultMap">
+        select  * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+        order by blog.updateTime desc
+        limit 0, #{number}
+    </select>
+
+    <select id="getSearchBlogList" parameterType="String" resultMap="BlogResultMap">
+        select * from blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid
+        where blog.title like "%"#{query}"%" or blog.content like "%"#{query}"%"
+    </select>
+
+    <select id="getBlogListByBids" resultMap="BlogResultMap">
+        select  distinct * from (blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid)
+        where 1 != 1
+            <if test="list!=null and list.size()>0">
+                or blog.bid in
+                <foreach collection="list" item ="item" index="index" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+    </select>
+
+    <select id="getBlogListByTypeId" resultMap="BlogResultMap">
+        select distinct * from (blog
+            left join type on blog.type_id = type.typeId
+            left join user on blog.user_id = user.uid)
+        where blog.type_id = #{typeId}
+    </select>
+
+
+    <insert id="saveBlog" parameterType="Blog">
+        insert into blog
+        (bid, title, content, firstPicture, description, flag, views, appreciation, shareStatement, commentable, published, recommend, createTime, updateTime, type_id, user_id)
+        values(#{id}, #{title}, #{content}, #{firstPicture}, #{description}, #{flag}, #{views}, #{appreciation}, #{shareStatement}, #{commentable}, #{published}, #{recommend}, #{createTime}, #{updateTime}, #{type.id}, #{user.id})
+
+    </insert>
+
+    <update id="updateBlog" parameterType="Blog">
+        update blog set title=#{title}, content=#{content}, firstPicture=#{firstPicture}, description=#{description},
+                        flag=#{flag}, appreciation=#{appreciation}, shareStatement=#{shareStatement},
+                        commentable=#{commentable}, published=#{published}, recommend=#{recommend},
+                        updateTime=#{updateTime}, type_id=#{type.id}, user_id=#{user.id}
+        where bid = #{id}
+
+    </update>
+
+
+    <delete id="deleteBlogById" parameterType="Long">
+        delete from blog where bid = #{id}
+    </delete>
+
+</mapper>

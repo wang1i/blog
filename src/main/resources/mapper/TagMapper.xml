@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wl.mapper.TagMapper">
+    <resultMap id="TagResultMap" type="com.wl.pojo.Tag">
+        <id property="id" column="tagId"/>
+        <result property="name" column="tagName"/>
+    </resultMap>
+
+
+    <select id="getTagById" parameterType="Long" resultMap="TagResultMap">
+        select * from tag where tagId = #{id}
+    </select>
+
+    <select id="getTagByName" parameterType="String" resultMap="TagResultMap">
+        select * from tag where tagName = #{name}
+    </select>
+
+    <select id="getTagList" resultMap="TagResultMap">
+        select * from tag
+    </select>
+
+    <select id="getTagListByIds" parameterType="Long" resultMap="TagResultMap">
+        select * from tag where 1 != 1
+        <if test="list!=null and list.size() > 0">
+            or tagId in
+            <foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </if>
+    </select>
+
+    <insert id="saveTag" parameterType="Tag">
+        insert into tag (tagName) values(#{name})
+    </insert>
+
+    <update id="updateTag" parameterType="Tag">
+        update tag set tagName = #{name} where tagId = #{id}
+    </update>
+
+    <delete id="deleteTag" parameterType="Long">
+        delete from tag where tagId = #{id}
+    </delete>
+
+</mapper>

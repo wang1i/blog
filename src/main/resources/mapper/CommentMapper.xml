@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wl.mapper.CommentMapper">
+    <select id="getCommentById" parameterType="Long" resultType="Comment">
+        select * from comment where id = #{id}
+    </select>
+
+    <select id="getTopCommentsByBlogId" parameterType="Long" resultType="Comment">
+        select * from comment where blogId = #{blogId} and parent_id = -1;
+    </select>
+
+    <select id="getReplyCommentsByCid" parameterType="Long" resultType="Comment">
+        select * from comment where parent_id = #{cid};
+    </select>
+
+    <insert id="saveComment" parameterType="Comment">
+        insert into comment(nickname, email, content, avatar, createTime, blogId, parent_id)
+            values(#{nickname}, #{email}, #{content}, #{avatar}, #{createTime}, #{blogId}, #{parentComment.id})
+    </insert>
+</mapper>

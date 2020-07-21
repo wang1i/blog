@@ -1,0 +1,1255 @@
+2020-07-15 10:41:58.784  INFO 2240 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 2240 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 10:41:58.796 DEBUG 2240 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 10:41:58.799  INFO 2240 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 10:41:58.912  INFO 2240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 10:41:58.913  INFO 2240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 10:42:00.785  INFO 2240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 10:42:00.927  INFO 2240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 0 JPA repository interfaces.
+2020-07-15 10:42:02.832  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 10:42:02.852  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 10:42:02.853  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 10:42:03.532  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 10:42:03.533  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4619 ms
+2020-07-15 10:42:03.863  INFO 2240 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 10:42:03.916  INFO 2240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 10:42:05.251  INFO 2240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 10:42:05.451  INFO 2240 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 10:42:05.718  INFO 2240 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 10:42:06.285  INFO 2240 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 10:42:06.415  WARN 2240 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 10:42:06.733  INFO 2240 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 10:42:07.194  INFO 2240 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 10:42:07.327  INFO 2240 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 10:42:07.356  INFO 2240 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 10:42:09.838  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 10:42:09.896  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 10:42:09.899  INFO 2240 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 10:42:09.900  INFO 2240 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 10:42:09.915  INFO 2240 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 12.693 seconds (JVM running for 15.895)
+2020-07-15 10:42:25.226  INFO 2240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 10:42:25.227  INFO 2240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 10:42:25.259  INFO 2240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-07-15 10:42:25.532  INFO 2240 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.index', args=[1, {}]}
+2020-07-15 10:42:25.827 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getAllBlogList_COUNT    : ==>  Preparing: SELECT count(0) FROM blog LEFT JOIN type ON blog.type_id = type.typeId LEFT JOIN user ON blog.user_id = user.uid 
+2020-07-15 10:42:25.897 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getAllBlogList_COUNT    : ==> Parameters: 
+2020-07-15 10:42:26.117 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getAllBlogList_COUNT    : <==      Total: 1
+2020-07-15 10:42:26.124 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getAllBlogList  : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid LIMIT ? 
+2020-07-15 10:42:26.128 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getAllBlogList  : ==> Parameters: 5(Integer)
+2020-07-15 10:42:26.154 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getAllBlogList  : <==      Total: 5
+2020-07-15 10:42:26.159 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:42:26.159 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 13(Long)
+2020-07-15 10:42:26.171 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 10:42:26.243 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 10:42:26.244 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-07-15 10:42:26.267 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 10:42:26.269 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:42:26.270 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 14(Long)
+2020-07-15 10:42:26.275 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 4
+2020-07-15 10:42:26.277 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? , ? ) 
+2020-07-15 10:42:26.278 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 3(Long), 5(Long), 6(Long), 7(Long)
+2020-07-15 10:42:26.288 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 4
+2020-07-15 10:42:26.290 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:42:26.291 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 15(Long)
+2020-07-15 10:42:26.294 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 10:42:26.295 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 10:42:26.296 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 1(Long), 2(Long), 5(Long)
+2020-07-15 10:42:26.299 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 10:42:26.301 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:42:26.302 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 16(Long)
+2020-07-15 10:42:26.309 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 10:42:26.312 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 10:42:26.313 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 5(Long), 6(Long), 7(Long)
+2020-07-15 10:42:26.316 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 10:42:26.317 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:42:26.317 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 17(Long)
+2020-07-15 10:42:26.319 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 1
+2020-07-15 10:42:26.323 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? ) 
+2020-07-15 10:42:26.324 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 5(Long)
+2020-07-15 10:42:26.329 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 1
+2020-07-15 10:42:26.338 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TypeMapper.getTypeList     : ==>  Preparing: select * from type 
+2020-07-15 10:42:26.358 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TypeMapper.getTypeList     : ==> Parameters: 
+2020-07-15 10:42:26.363 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TypeMapper.getTypeList     : <==      Total: 6
+2020-07-15 10:42:26.365 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 10:42:26.365 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 1(Long)
+2020-07-15 10:42:26.370 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 0
+2020-07-15 10:42:26.372 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 10:42:26.377 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 26(Long)
+2020-07-15 10:42:26.385 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 2
+2020-07-15 10:42:26.386 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 10:42:26.388 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 27(Long)
+2020-07-15 10:42:26.400 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 1
+2020-07-15 10:42:26.404 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 10:42:26.404 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 28(Long)
+2020-07-15 10:42:26.410 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 1
+2020-07-15 10:42:26.413 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 10:42:26.413 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 29(Long)
+2020-07-15 10:42:26.419 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 2
+2020-07-15 10:42:26.420 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 10:42:26.421 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 30(Long)
+2020-07-15 10:42:26.426 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 0
+2020-07-15 10:42:26.428 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag 
+2020-07-15 10:42:26.428 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 
+2020-07-15 10:42:26.431 DEBUG 2240 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : <==      Total: 7
+2020-07-15 10:42:26.433 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.433 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 1(Long)
+2020-07-15 10:42:26.437 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 1
+2020-07-15 10:42:26.440 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? ) 
+2020-07-15 10:42:26.440 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 15(Long)
+2020-07-15 10:42:26.447 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 1
+2020-07-15 10:42:26.449 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.449 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 2(Long)
+2020-07-15 10:42:26.451 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 10:42:26.453 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 10:42:26.453 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 15(Long)
+2020-07-15 10:42:26.459 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 10:42:26.460 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.462 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 3(Long)
+2020-07-15 10:42:26.465 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 10:42:26.467 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 10:42:26.487 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 14(Long)
+2020-07-15 10:42:26.502 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 10:42:26.503 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.504 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 4(Long)
+2020-07-15 10:42:26.506 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 10:42:26.508 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 10:42:26.508 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 18(Long)
+2020-07-15 10:42:26.513 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 10:42:26.514 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.514 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 5(Long)
+2020-07-15 10:42:26.516 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 5
+2020-07-15 10:42:26.518 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? , ? , ? , ? ) 
+2020-07-15 10:42:26.518 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 15(Long), 17(Long), 18(Long), 14(Long)
+2020-07-15 10:42:26.527 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 5
+2020-07-15 10:42:26.528 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.528 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 6(Long)
+2020-07-15 10:42:26.532 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 3
+2020-07-15 10:42:26.535 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? , ? ) 
+2020-07-15 10:42:26.552 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 18(Long), 14(Long)
+2020-07-15 10:42:26.558 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 3
+2020-07-15 10:42:26.562 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 10:42:26.563 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 7(Long)
+2020-07-15 10:42:26.565 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 10:42:26.567 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 10:42:26.568 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 14(Long)
+2020-07-15 10:42:26.573 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 10:42:26.574 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getRecommendBlogList    : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid order by blog.updateTime desc limit 0, ? 
+2020-07-15 10:42:26.576 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getRecommendBlogList    : ==> Parameters: 3(Long)
+2020-07-15 10:42:26.582 DEBUG 2240 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getRecommendBlogList    : <==      Total: 3
+2020-07-15 10:42:26.583  INFO 2240 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Result ： index
+2020-07-15 10:42:34.311  INFO 2240 --- [http-nio-8080-exec-5] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 10:42:34.313 DEBUG 2240 --- [http-nio-8080-exec-5] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 10:42:34.314 DEBUG 2240 --- [http-nio-8080-exec-5] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 10:42:34.317 DEBUG 2240 --- [http-nio-8080-exec-5] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 10:42:34.324 ERROR 2240 --- [http-nio-8080-exec-5] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/blog/13, Exception {}
+
+java.lang.NullPointerException: null
+	at com.wl.service.BlogServiceImpl.setTags(BlogServiceImpl.java:33)
+	at com.wl.service.BlogServiceImpl.getBlogAndConvertById(BlogServiceImpl.java:41)
+	at com.wl.controller.IndexController.blog(IndexController.java:49)
+	at com.wl.controller.IndexController$$FastClassBySpringCGLIB$$ea1922a8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.wl.controller.IndexController$$EnhancerBySpringCGLIB$$4882c6f2.blog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 10:42:34.325  WARN 2240 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-07-15 10:55:42.505  INFO 12948 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 12948 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 10:55:42.513 DEBUG 12948 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 10:55:42.514  INFO 12948 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 10:55:42.649  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 10:55:42.650  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 10:55:44.008  INFO 12948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 10:55:44.121  INFO 12948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 0 JPA repository interfaces.
+2020-07-15 10:55:45.413  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 10:55:45.429  INFO 12948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 10:55:45.430  INFO 12948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 10:55:45.993  INFO 12948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 10:55:45.994  INFO 12948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3344 ms
+2020-07-15 10:55:46.226  INFO 12948 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 10:55:46.256  INFO 12948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 10:55:47.277  INFO 12948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 10:55:47.453  INFO 12948 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 10:55:47.657  INFO 12948 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 10:55:48.016  INFO 12948 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 10:55:48.302  INFO 12948 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 10:55:48.434  WARN 12948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 10:55:48.671  INFO 12948 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 10:55:48.691  INFO 12948 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 10:55:49.002  INFO 12948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 10:55:51.495  INFO 12948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 10:55:51.609  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 10:55:51.613  INFO 12948 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 10:55:51.615  INFO 12948 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 10:55:51.634  INFO 12948 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 10.454 seconds (JVM running for 13.478)
+2020-07-15 10:55:54.916  INFO 12948 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 10:55:54.917  INFO 12948 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 10:55:54.962  INFO 12948 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2020-07-15 10:55:55.288  INFO 12948 --- [http-nio-8080-exec-2] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 10:55:55.366 DEBUG 12948 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 10:55:55.426 DEBUG 12948 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 10:55:55.457 DEBUG 12948 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 10:55:55.473 ERROR 12948 --- [http-nio-8080-exec-2] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/blog/13, Exception {}
+
+java.lang.NullPointerException: null
+	at com.wl.service.BlogServiceImpl.setTags(BlogServiceImpl.java:33)
+	at com.wl.service.BlogServiceImpl.getBlogAndConvertById(BlogServiceImpl.java:41)
+	at com.wl.controller.IndexController.blog(IndexController.java:49)
+	at com.wl.controller.IndexController$$FastClassBySpringCGLIB$$ea1922a8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.wl.controller.IndexController$$EnhancerBySpringCGLIB$$21b8ab7f.blog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 10:55:55.480  WARN 12948 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-07-15 10:56:16.310  INFO 11528 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 11528 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 10:56:16.322 DEBUG 11528 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 10:56:16.322  INFO 11528 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 10:56:16.441  INFO 11528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 10:56:16.441  INFO 11528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 10:56:18.088  INFO 11528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 10:56:18.260  INFO 11528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139ms. Found 0 JPA repository interfaces.
+2020-07-15 10:56:22.777  INFO 11528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 10:56:22.816  INFO 11528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 10:56:22.816  INFO 11528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 10:56:23.347  INFO 11528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 10:56:23.347  INFO 11528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6905 ms
+2020-07-15 10:56:23.833  INFO 11528 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 10:56:23.899  INFO 11528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 10:56:25.395  INFO 11528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 10:56:25.627  INFO 11528 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 10:56:25.918  INFO 11528 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 10:56:26.657  INFO 11528 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 10:56:27.435  WARN 11528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 10:56:27.479  INFO 11528 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 10:56:28.373  INFO 11528 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 10:56:28.429  INFO 11528 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 10:56:28.769  INFO 11528 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 10:56:31.713  INFO 11528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 10:56:31.859  INFO 11528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 10:56:31.865  INFO 11528 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 10:56:31.866  INFO 11528 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 10:56:31.897  INFO 11528 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 17.51 seconds (JVM running for 22.068)
+2020-07-15 10:56:35.452  INFO 11528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 10:56:35.453  INFO 11528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 10:56:35.512  INFO 11528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 58 ms
+2020-07-15 10:56:36.110  INFO 11528 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 10:56:36.202 DEBUG 11528 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 10:56:36.259 DEBUG 11528 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 10:56:36.281 DEBUG 11528 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 10:57:25.765  WARN 11528 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m269ms504µs601ns).
+2020-07-15 10:58:16.649  WARN 11528 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s885ms285µs300ns).
+2020-07-15 10:58:36.391  INFO 5992 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 5992 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 10:58:36.398 DEBUG 5992 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 10:58:36.398  INFO 5992 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 10:58:36.602  INFO 5992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 10:58:36.604  INFO 5992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 10:58:38.252  INFO 5992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 10:58:38.364  INFO 5992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 0 JPA repository interfaces.
+2020-07-15 10:58:42.469  INFO 5992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 10:58:42.510  INFO 5992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 10:58:42.511  INFO 5992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 10:58:43.056  INFO 5992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 10:58:43.057  INFO 5992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6451 ms
+2020-07-15 10:58:43.500  INFO 5992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 10:58:43.550  INFO 5992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 10:58:44.929  INFO 5992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 10:58:45.173  INFO 5992 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 10:58:45.442  INFO 5992 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 10:58:46.158  INFO 5992 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 10:58:46.828  WARN 5992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 10:58:46.857  INFO 5992 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 10:58:47.605  INFO 5992 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 10:58:47.653  INFO 5992 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 10:58:47.867  INFO 5992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 10:58:50.505  INFO 5992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 10:58:50.672  INFO 5992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 10:58:50.681  INFO 5992 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 10:58:50.682  INFO 5992 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 10:58:50.712  INFO 5992 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 16.038 seconds (JVM running for 19.607)
+2020-07-15 10:59:05.777  INFO 5992 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 10:59:05.778  INFO 5992 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 10:59:05.817  INFO 5992 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 38 ms
+2020-07-15 10:59:06.250  INFO 5992 --- [http-nio-8080-exec-2] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.index', args=[1, {}]}
+2020-07-15 10:59:06.495 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getAllBlogList_COUNT    : ==>  Preparing: SELECT count(0) FROM blog LEFT JOIN type ON blog.type_id = type.typeId LEFT JOIN user ON blog.user_id = user.uid 
+2020-07-15 10:59:06.552 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getAllBlogList_COUNT    : ==> Parameters: 
+2020-07-15 10:59:06.578 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getAllBlogList_COUNT    : <==      Total: 1
+2020-07-15 10:59:06.586 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getAllBlogList  : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid LIMIT ? 
+2020-07-15 10:59:06.589 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getAllBlogList  : ==> Parameters: 5(Integer)
+2020-07-15 10:59:06.616 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getAllBlogList  : <==      Total: 5
+2020-07-15 10:59:30.468  WARN 5992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s436ms478µs701ns).
+2020-07-15 10:59:30.496 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:59:30.500 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 13(Long)
+2020-07-15 10:59:30.514 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 10:59:38.699 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 10:59:38.706 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-07-15 10:59:38.735 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 10:59:50.820 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:59:50.825 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 14(Long)
+2020-07-15 10:59:50.842 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 4
+2020-07-15 10:59:51.223 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? , ? ) 
+2020-07-15 10:59:51.227 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 3(Long), 5(Long), 6(Long), 7(Long)
+2020-07-15 10:59:51.250 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 4
+2020-07-15 10:59:54.393 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:59:54.400 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 15(Long)
+2020-07-15 10:59:54.414 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 10:59:54.828 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 10:59:54.840 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 1(Long), 2(Long), 5(Long)
+2020-07-15 10:59:54.876 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 10:59:57.738 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 10:59:57.742 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 16(Long)
+2020-07-15 10:59:57.763 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 10:59:58.149 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 10:59:58.171 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 5(Long), 6(Long), 7(Long)
+2020-07-15 10:59:58.210 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:00:01.621 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:00:01.628 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 17(Long)
+2020-07-15 11:00:01.652 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 1
+2020-07-15 11:00:01.958 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? ) 
+2020-07-15 11:00:01.961 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 5(Long)
+2020-07-15 11:00:01.989 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 1
+2020-07-15 11:00:14.727 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TypeMapper.getTypeList     : ==>  Preparing: select * from type 
+2020-07-15 11:00:14.732 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TypeMapper.getTypeList     : ==> Parameters: 
+2020-07-15 11:00:14.756 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TypeMapper.getTypeList     : <==      Total: 6
+2020-07-15 11:00:14.768 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:00:14.771 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 1(Long)
+2020-07-15 11:00:14.812 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 0
+2020-07-15 11:00:14.822 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:00:14.825 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 26(Long)
+2020-07-15 11:00:14.902 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 2
+2020-07-15 11:00:14.911 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:00:14.938 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 27(Long)
+2020-07-15 11:00:15.042 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 1
+2020-07-15 11:00:15.078 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:00:15.084 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 28(Long)
+2020-07-15 11:00:15.143 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 1
+2020-07-15 11:00:15.163 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:00:15.168 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 29(Long)
+2020-07-15 11:00:15.251 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 2
+2020-07-15 11:00:15.262 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:00:15.265 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 30(Long)
+2020-07-15 11:00:15.289 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 0
+2020-07-15 11:00:16.051 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag 
+2020-07-15 11:00:16.053 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 
+2020-07-15 11:00:16.101 DEBUG 5992 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagList       : <==      Total: 7
+2020-07-15 11:00:16.107 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.109 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 1(Long)
+2020-07-15 11:00:16.121 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 1
+2020-07-15 11:00:16.134 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? ) 
+2020-07-15 11:00:16.136 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 15(Long)
+2020-07-15 11:00:16.196 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 1
+2020-07-15 11:00:16.199 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.201 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 2(Long)
+2020-07-15 11:00:16.214 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:00:16.223 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:00:16.231 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 15(Long)
+2020-07-15 11:00:16.291 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:00:16.295 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.297 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 3(Long)
+2020-07-15 11:00:16.313 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:00:16.323 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:00:16.327 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 14(Long)
+2020-07-15 11:00:16.548 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:00:16.558 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.563 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 4(Long)
+2020-07-15 11:00:16.580 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:00:16.592 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:00:16.594 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 18(Long)
+2020-07-15 11:00:16.654 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:00:16.661 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.664 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 5(Long)
+2020-07-15 11:00:16.683 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 5
+2020-07-15 11:00:16.697 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? , ? , ? , ? ) 
+2020-07-15 11:00:16.705 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 15(Long), 17(Long), 18(Long), 14(Long)
+2020-07-15 11:00:16.811 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 5
+2020-07-15 11:00:16.816 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.820 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 6(Long)
+2020-07-15 11:00:16.843 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 3
+2020-07-15 11:00:16.849 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? , ? ) 
+2020-07-15 11:00:16.852 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 18(Long), 14(Long)
+2020-07-15 11:00:16.927 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 3
+2020-07-15 11:00:16.930 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:00:16.933 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 7(Long)
+2020-07-15 11:00:16.948 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:00:16.954 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:00:16.957 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 14(Long)
+2020-07-15 11:00:16.999 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:00:18.152 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getRecommendBlogList    : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid order by blog.updateTime desc limit 0, ? 
+2020-07-15 11:00:18.155 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getRecommendBlogList    : ==> Parameters: 3(Long)
+2020-07-15 11:00:18.222 DEBUG 5992 --- [http-nio-8080-exec-2] c.w.m.BlogMapper.getRecommendBlogList    : <==      Total: 3
+2020-07-15 11:00:49.322  WARN 5992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s773ms992µs600ns).
+2020-07-15 11:00:49.330  INFO 5992 --- [http-nio-8080-exec-2] com.wl.aspect.LogAspect                  : Result ： index
+2020-07-15 11:00:49.350  INFO 5992 --- [http-nio-8080-exec-6] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 11:00:49.350  INFO 5992 --- [http-nio-8080-exec-8] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 11:00:49.353 DEBUG 5992 --- [http-nio-8080-exec-6] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:00:49.354 DEBUG 5992 --- [http-nio-8080-exec-6] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 11:00:49.358 DEBUG 5992 --- [http-nio-8080-exec-6] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 11:00:49.367 DEBUG 5992 --- [http-nio-8080-exec-8] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:00:49.369 DEBUG 5992 --- [http-nio-8080-exec-8] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 11:00:49.371 DEBUG 5992 --- [http-nio-8080-exec-8] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 11:00:49.371 ERROR 5992 --- [http-nio-8080-exec-6] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/blog/13, Exception {}
+
+java.lang.NullPointerException: null
+	at com.wl.service.BlogServiceImpl.setTags(BlogServiceImpl.java:33)
+	at com.wl.service.BlogServiceImpl.getBlogAndConvertById(BlogServiceImpl.java:41)
+	at com.wl.controller.IndexController.blog(IndexController.java:49)
+	at com.wl.controller.IndexController$$FastClassBySpringCGLIB$$ea1922a8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.wl.controller.IndexController$$EnhancerBySpringCGLIB$$c572f970.blog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 11:00:49.373  WARN 5992 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-07-15 11:00:49.373 ERROR 5992 --- [http-nio-8080-exec-8] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/blog/13, Exception {}
+
+java.lang.NullPointerException: null
+	at com.wl.service.BlogServiceImpl.setTags(BlogServiceImpl.java:33)
+	at com.wl.service.BlogServiceImpl.getBlogAndConvertById(BlogServiceImpl.java:41)
+	at com.wl.controller.IndexController.blog(IndexController.java:49)
+	at com.wl.controller.IndexController$$FastClassBySpringCGLIB$$ea1922a8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.wl.controller.IndexController$$EnhancerBySpringCGLIB$$c572f970.blog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 11:00:49.374  WARN 5992 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-07-15 11:00:52.244  INFO 5992 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 11:00:52.248  INFO 5992 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-15 11:00:52.251  INFO 5992 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-15 11:00:52.269  INFO 5992 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-15 11:01:11.306  INFO 10196 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 10196 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 11:01:11.316 DEBUG 10196 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 11:01:11.317  INFO 10196 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 11:01:11.523  INFO 10196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 11:01:11.524  INFO 10196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 11:01:13.072  INFO 10196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 11:01:13.197  INFO 10196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102ms. Found 0 JPA repository interfaces.
+2020-07-15 11:01:17.108  INFO 10196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 11:01:17.134  INFO 10196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 11:01:17.135  INFO 10196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 11:01:17.660  INFO 10196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 11:01:17.661  INFO 10196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6135 ms
+2020-07-15 11:01:18.090  INFO 10196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 11:01:18.132  INFO 10196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 11:01:19.475  INFO 10196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 11:01:19.693  INFO 10196 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 11:01:19.957  INFO 10196 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 11:01:20.697  INFO 10196 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 11:01:21.250  WARN 10196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 11:01:21.324  INFO 10196 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 11:01:22.123  INFO 10196 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 11:01:22.168  INFO 10196 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 11:01:22.388  INFO 10196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 11:01:25.141  INFO 10196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 11:01:25.314  INFO 10196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 11:01:25.320  INFO 10196 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 11:01:25.322  INFO 10196 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 11:01:25.354  INFO 10196 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 15.698 seconds (JVM running for 19.335)
+2020-07-15 11:01:30.542  INFO 10196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 11:01:30.543  INFO 10196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 11:01:30.574  INFO 10196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-07-15 11:01:30.950  INFO 10196 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 11:01:42.348 DEBUG 10196 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:01:42.940 DEBUG 10196 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 11:01:43.224 DEBUG 10196 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 11:05:12.195  WARN 10196 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m52s617ms98µs800ns).
+2020-07-15 11:05:12.209 ERROR 10196 --- [http-nio-8080-exec-1] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/blog/13, Exception {}
+
+java.lang.NullPointerException: null
+	at com.wl.service.BlogServiceImpl.setTags(BlogServiceImpl.java:33)
+	at com.wl.service.BlogServiceImpl.getBlogAndConvertById(BlogServiceImpl.java:41)
+	at com.wl.controller.IndexController.blog(IndexController.java:49)
+	at com.wl.controller.IndexController$$FastClassBySpringCGLIB$$ea1922a8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.wl.controller.IndexController$$EnhancerBySpringCGLIB$$80d031b3.blog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 11:05:12.216  WARN 10196 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-07-15 11:05:15.532  INFO 10196 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 11:05:15.536  INFO 10196 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-15 11:05:15.540  INFO 10196 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-15 11:05:15.558  INFO 10196 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-15 11:05:37.573  INFO 280 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 280 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 11:05:37.580 DEBUG 280 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 11:05:37.580  INFO 280 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 11:05:37.789  INFO 280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 11:05:37.791  INFO 280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 11:05:39.305  INFO 280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 11:05:39.416  INFO 280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 0 JPA repository interfaces.
+2020-07-15 11:05:41.141  INFO 280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 11:05:41.157  INFO 280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 11:05:41.157  INFO 280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 11:05:41.606  INFO 280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 11:05:41.607  INFO 280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3815 ms
+2020-07-15 11:05:41.904  INFO 280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 11:05:41.939  INFO 280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 11:05:42.884  INFO 280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 11:05:43.054  INFO 280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 11:05:43.239  INFO 280 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 11:05:43.653  INFO 280 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 11:05:43.984  INFO 280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 11:05:44.074  WARN 280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 11:05:44.582  INFO 280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 11:05:44.609  INFO 280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 11:05:44.932  INFO 280 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 11:05:47.329  INFO 280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 11:05:47.404  INFO 280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 11:05:47.407  INFO 280 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 11:05:47.409  INFO 280 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 11:05:47.424  INFO 280 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 11.46 seconds (JVM running for 15.155)
+2020-07-15 11:06:34.328  INFO 280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 11:06:34.329  INFO 280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 11:06:34.362  INFO 280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-07-15 11:06:34.612  INFO 280 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.index', args=[1, {}]}
+2020-07-15 11:06:34.730 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getAllBlogList_COUNT    : ==>  Preparing: SELECT count(0) FROM blog LEFT JOIN type ON blog.type_id = type.typeId LEFT JOIN user ON blog.user_id = user.uid 
+2020-07-15 11:06:34.771 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getAllBlogList_COUNT    : ==> Parameters: 
+2020-07-15 11:06:34.793 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getAllBlogList_COUNT    : <==      Total: 1
+2020-07-15 11:06:34.797 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getAllBlogList  : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid LIMIT ? 
+2020-07-15 11:06:34.798 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getAllBlogList  : ==> Parameters: 5(Integer)
+2020-07-15 11:06:34.812 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getAllBlogList  : <==      Total: 5
+2020-07-15 11:06:34.816 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:06:34.816 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 13(Long)
+2020-07-15 11:06:34.819 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 11:06:34.874 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 11:06:34.877 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-07-15 11:06:34.881 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:06:34.883 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:06:34.883 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 14(Long)
+2020-07-15 11:06:34.885 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 4
+2020-07-15 11:06:34.887 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? , ? ) 
+2020-07-15 11:06:34.888 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 3(Long), 5(Long), 6(Long), 7(Long)
+2020-07-15 11:06:34.892 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 4
+2020-07-15 11:06:34.894 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:06:34.894 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 15(Long)
+2020-07-15 11:06:34.896 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 11:06:34.898 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 11:06:34.899 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 1(Long), 2(Long), 5(Long)
+2020-07-15 11:06:34.901 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:06:34.902 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:06:34.903 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 16(Long)
+2020-07-15 11:06:34.912 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 11:06:34.913 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 11:06:34.915 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 5(Long), 6(Long), 7(Long)
+2020-07-15 11:06:34.917 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:06:34.919 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:06:34.919 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 17(Long)
+2020-07-15 11:06:34.922 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 1
+2020-07-15 11:06:34.924 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? ) 
+2020-07-15 11:06:34.924 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 5(Long)
+2020-07-15 11:06:34.928 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 1
+2020-07-15 11:06:34.937 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TypeMapper.getTypeList     : ==>  Preparing: select * from type 
+2020-07-15 11:06:34.937 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TypeMapper.getTypeList     : ==> Parameters: 
+2020-07-15 11:06:34.940 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TypeMapper.getTypeList     : <==      Total: 6
+2020-07-15 11:06:34.943 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:06:34.943 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 1(Long)
+2020-07-15 11:06:34.946 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 0
+2020-07-15 11:06:34.948 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:06:34.948 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 26(Long)
+2020-07-15 11:06:34.953 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 2
+2020-07-15 11:06:34.954 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:06:34.955 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 27(Long)
+2020-07-15 11:06:34.964 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 1
+2020-07-15 11:06:34.968 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:06:34.968 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 28(Long)
+2020-07-15 11:06:34.972 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 1
+2020-07-15 11:06:34.974 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:06:34.976 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 29(Long)
+2020-07-15 11:06:34.981 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 2
+2020-07-15 11:06:34.982 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where blog.type_id = ? 
+2020-07-15 11:06:34.982 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : ==> Parameters: 30(Long)
+2020-07-15 11:06:34.984 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getBlogListByTypeId     : <==      Total: 0
+2020-07-15 11:06:34.986 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag 
+2020-07-15 11:06:34.986 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 
+2020-07-15 11:06:34.990 DEBUG 280 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : <==      Total: 7
+2020-07-15 11:06:34.992 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:34.993 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 1(Long)
+2020-07-15 11:06:34.994 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 1
+2020-07-15 11:06:34.996 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? ) 
+2020-07-15 11:06:34.998 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 15(Long)
+2020-07-15 11:06:35.001 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 1
+2020-07-15 11:06:35.001 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:35.002 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 2(Long)
+2020-07-15 11:06:35.003 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:06:35.005 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:06:35.006 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 15(Long)
+2020-07-15 11:06:35.009 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:06:35.010 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:35.011 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 3(Long)
+2020-07-15 11:06:35.013 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:06:35.015 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:06:35.016 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 14(Long)
+2020-07-15 11:06:35.033 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:06:35.034 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:35.035 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 4(Long)
+2020-07-15 11:06:35.036 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:06:35.038 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:06:35.039 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 13(Long), 18(Long)
+2020-07-15 11:06:35.043 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:06:35.044 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:35.045 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 5(Long)
+2020-07-15 11:06:35.047 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 5
+2020-07-15 11:06:35.048 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? , ? , ? , ? ) 
+2020-07-15 11:06:35.049 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 15(Long), 17(Long), 18(Long), 14(Long)
+2020-07-15 11:06:35.054 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 5
+2020-07-15 11:06:35.056 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:35.056 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 6(Long)
+2020-07-15 11:06:35.058 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 3
+2020-07-15 11:06:35.060 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? , ? ) 
+2020-07-15 11:06:35.061 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 18(Long), 14(Long)
+2020-07-15 11:06:35.065 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 3
+2020-07-15 11:06:35.067 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==>  Preparing: select blog_id from blog_tag where tag_id = ? 
+2020-07-15 11:06:35.067 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : ==> Parameters: 7(Long)
+2020-07-15 11:06:35.069 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getBlogsByTagId      : <==      Total: 2
+2020-07-15 11:06:35.071 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==>  Preparing: select distinct * from (blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid) where 1 != 1 or blog.bid in ( ? , ? ) 
+2020-07-15 11:06:35.072 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : ==> Parameters: 16(Long), 14(Long)
+2020-07-15 11:06:35.078 DEBUG 280 --- [http-nio-8080-exec-1] c.w.mapper.BlogMapper.getBlogListByBids  : <==      Total: 2
+2020-07-15 11:06:35.079 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getRecommendBlogList    : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid order by blog.updateTime desc limit 0, ? 
+2020-07-15 11:06:35.080 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getRecommendBlogList    : ==> Parameters: 3(Long)
+2020-07-15 11:06:35.084 DEBUG 280 --- [http-nio-8080-exec-1] c.w.m.BlogMapper.getRecommendBlogList    : <==      Total: 3
+2020-07-15 11:06:35.086  INFO 280 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Result ： index
+2020-07-15 11:06:41.035  INFO 280 --- [http-nio-8080-exec-2] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[null, {}]}
+2020-07-15 11:09:49.430  WARN 280 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m36s443ms87µs700ns).
+2020-07-15 11:09:49.448 DEBUG 280 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:09:49.454 DEBUG 280 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: null
+2020-07-15 11:09:49.489 DEBUG 280 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 0
+2020-07-15 11:15:09.360  WARN 280 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m19s929ms911µs900ns).
+2020-07-15 11:15:09.372 ERROR 280 --- [http-nio-8080-exec-2] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/blog/13, Exception {}
+
+java.lang.NullPointerException: null
+	at com.wl.service.BlogServiceImpl.setTags(BlogServiceImpl.java:33)
+	at com.wl.service.BlogServiceImpl.getBlogAndConvertById(BlogServiceImpl.java:41)
+	at com.wl.controller.IndexController.blog(IndexController.java:49)
+	at com.wl.controller.IndexController$$FastClassBySpringCGLIB$$ea1922a8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.wl.controller.IndexController$$EnhancerBySpringCGLIB$$cd3ba5e2.blog(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 11:15:09.375  WARN 280 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2020-07-15 11:15:11.501  INFO 280 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 11:15:11.508  INFO 280 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-15 11:15:11.513  INFO 280 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-15 11:15:11.535  INFO 280 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-15 11:16:59.521  INFO 5456 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 5456 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-15 11:16:59.531 DEBUG 5456 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-15 11:16:59.532  INFO 5456 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-15 11:17:00.068  INFO 5456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-15 11:17:00.070  INFO 5456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-15 11:17:03.912  INFO 5456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-15 11:17:04.046  INFO 5456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 0 JPA repository interfaces.
+2020-07-15 11:17:06.007  INFO 5456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-15 11:17:06.025  INFO 5456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-15 11:17:06.027  INFO 5456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-15 11:17:06.664  INFO 5456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-15 11:17:06.664  INFO 5456 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6593 ms
+2020-07-15 11:17:06.975  INFO 5456 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-15 11:17:07.018  INFO 5456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-15 11:17:08.101  INFO 5456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-15 11:17:08.240  INFO 5456 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-15 11:17:08.486  INFO 5456 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-15 11:17:09.185  INFO 5456 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-15 11:17:10.580  INFO 5456 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-15 11:17:10.856  WARN 5456 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-15 11:17:11.040  INFO 5456 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-15 11:17:11.059  INFO 5456 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-15 11:17:11.503  INFO 5456 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-15 11:17:14.097  INFO 5456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-15 11:17:14.170  INFO 5456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-15 11:17:14.173  INFO 5456 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-15 11:17:14.174  INFO 5456 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-15 11:17:14.191  INFO 5456 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 16.837 seconds (JVM running for 20.374)
+2020-07-15 11:17:17.683  INFO 5456 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-15 11:17:17.684  INFO 5456 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-15 11:17:17.712  INFO 5456 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2020-07-15 11:17:17.930  INFO 5456 --- [http-nio-8080-exec-2] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[13, {}]}
+2020-07-15 11:17:18.000 DEBUG 5456 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:17:18.032 DEBUG 5456 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: 13(Long)
+2020-07-15 11:17:18.067 DEBUG 5456 --- [http-nio-8080-exec-2] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 1
+2020-07-15 11:17:18.069 DEBUG 5456 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:17:18.070 DEBUG 5456 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 13(Long)
+2020-07-15 11:17:18.075 DEBUG 5456 --- [http-nio-8080-exec-2] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 11:17:18.118 DEBUG 5456 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 11:17:18.119 DEBUG 5456 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-07-15 11:17:18.122 DEBUG 5456 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:17:18.189  INFO 5456 --- [http-nio-8080-exec-2] com.wl.aspect.LogAspect                  : Result ： blog
+2020-07-15 11:17:19.217 ERROR 5456 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "blog.commentabled" (template: "blog" - line 475, col 48)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "blog.commentabled" (template: "blog" - line 475, col 48)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'commentabled' cannot be found on object of type 'com.wl.pojo.Blog' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 71 common frames omitted
+
+2020-07-15 11:17:19.227 ERROR 5456 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'commentabled' cannot be found on object of type 'com.wl.pojo.Blog' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-15 11:19:41.917  INFO 5456 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[13, {}]}
+2020-07-15 11:19:41.922 DEBUG 5456 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:19:41.924 DEBUG 5456 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: 13(Long)
+2020-07-15 11:19:41.931 DEBUG 5456 --- [http-nio-8080-exec-1] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 1
+2020-07-15 11:19:41.933 DEBUG 5456 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:19:41.934 DEBUG 5456 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 13(Long)
+2020-07-15 11:19:41.937 DEBUG 5456 --- [http-nio-8080-exec-1] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 11:19:41.939 DEBUG 5456 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 11:19:41.941 DEBUG 5456 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-07-15 11:19:41.944 DEBUG 5456 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:19:41.946  INFO 5456 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Result ： blog
+2020-07-15 11:20:42.372  INFO 5456 --- [http-nio-8080-exec-9] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/blog/13', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.blog', args=[13, {}]}
+2020-07-15 11:20:42.375 DEBUG 5456 --- [http-nio-8080-exec-9] com.wl.mapper.BlogMapper.getBlogById     : ==>  Preparing: select * from blog left join type on blog.type_id = type.typeId left join user on blog.user_id = user.uid where blog.bid = ? 
+2020-07-15 11:20:42.376 DEBUG 5456 --- [http-nio-8080-exec-9] com.wl.mapper.BlogMapper.getBlogById     : ==> Parameters: 13(Long)
+2020-07-15 11:20:42.381 DEBUG 5456 --- [http-nio-8080-exec-9] com.wl.mapper.BlogMapper.getBlogById     : <==      Total: 1
+2020-07-15 11:20:42.382 DEBUG 5456 --- [http-nio-8080-exec-9] c.w.m.BlogTagMapper.getTagsByBlogId      : ==>  Preparing: select tag_id from blog_tag where blog_id = ? 
+2020-07-15 11:20:42.382 DEBUG 5456 --- [http-nio-8080-exec-9] c.w.m.BlogTagMapper.getTagsByBlogId      : ==> Parameters: 13(Long)
+2020-07-15 11:20:42.384 DEBUG 5456 --- [http-nio-8080-exec-9] c.w.m.BlogTagMapper.getTagsByBlogId      : <==      Total: 3
+2020-07-15 11:20:42.386 DEBUG 5456 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagListByIds  : ==>  Preparing: select * from tag where 1 != 1 or tagId in ( ? , ? , ? ) 
+2020-07-15 11:20:42.387 DEBUG 5456 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagListByIds  : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-07-15 11:20:42.391 DEBUG 5456 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagListByIds  : <==      Total: 3
+2020-07-15 11:20:42.392  INFO 5456 --- [http-nio-8080-exec-9] com.wl.aspect.LogAspect                  : Result ： blog

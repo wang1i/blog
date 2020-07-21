@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wl.mapper.BlogTagMapper">
+    <insert id="saveBlogTag" >
+        insert ignore into blog_tag (blog_id, tag_id) values
+        <foreach collection="tds"  item="item" separator=",">
+            (#{bid}, #{item})
+        </foreach>
+    </insert>
+
+    <delete id="deleteBlogTagByBid" parameterType="Long">
+        delete from blog_tag where blog_id = #{blogId}
+    </delete>
+
+    <select id="getBlogsByTagId" parameterType="Long" resultType="Long">
+        select blog_id from blog_tag where tag_id = #{tid}
+    </select>
+
+    <select id="getTagsByBlogId" parameterType="Long" resultType="Long">
+        select tag_id from blog_tag where blog_id = #{bid}
+    </select>
+
+</mapper>

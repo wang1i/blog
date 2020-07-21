@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wl.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="com.wl.pojo.User">
+        <id property="id" column="uid"/>
+        <result property="nickname" column="nickname"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="email" column="email"/>
+        <result property="avatar" column="avatar"/>
+        <result property="type" column="type"/>
+        <result property="createTime" column="u_createTime"/>
+        <result property="updateTime" column="u_createTime"/>
+    </resultMap>
+
+    <select id="selectUserByNameAndPassword" resultMap="UserResultMap">
+        select * from user where username = #{param1} and password = #{param2}
+    </select>
+</mapper>

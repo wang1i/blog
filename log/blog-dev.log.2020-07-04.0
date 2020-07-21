@@ -1,0 +1,890 @@
+2020-07-04 08:47:15.727  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 7992 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-04 08:47:15.746 DEBUG 7992 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-04 08:47:15.746  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-04 08:47:15.919  INFO 7992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-04 08:47:15.921  INFO 7992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-04 08:47:18.247  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-04 08:47:18.408  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127ms. Found 0 JPA repository interfaces.
+2020-07-04 08:47:21.445  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-04 08:47:21.465  INFO 7992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-04 08:47:21.466  INFO 7992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-04 08:47:22.415  INFO 7992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-04 08:47:22.417  INFO 7992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6495 ms
+2020-07-04 08:47:22.951  INFO 7992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-04 08:47:23.005  INFO 7992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-04 08:47:26.113  INFO 7992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-04 08:47:26.373  INFO 7992 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-04 08:47:26.751  INFO 7992 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-04 08:47:27.549  INFO 7992 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-04 08:47:27.845  WARN 7992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-04 08:47:28.101  INFO 7992 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-04 08:47:28.910  INFO 7992 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-04 08:47:28.942  INFO 7992 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 08:47:29.317  INFO 7992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-04 08:47:33.802  INFO 7992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-04 08:47:33.897  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-04 08:47:33.902  INFO 7992 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-04 08:47:33.903  INFO 7992 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-04 08:47:33.924  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 20.234 seconds (JVM running for 25.669)
+2020-07-04 08:48:54.234  INFO 7992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-04 08:48:54.236  INFO 7992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-04 08:48:54.270  INFO 7992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2020-07-04 08:48:54.541  INFO 7992 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wl.controller.IndexController.index', args=[]}
+2020-07-04 08:48:54.559  INFO 7992 --- [http-nio-8080-exec-1] com.wl.aspect.LogAspect                  : Result ： index
+2020-07-04 08:49:08.809 DEBUG 7992 --- [http-nio-8080-exec-6] c.w.m.U.selectUserByNameAndPassword      : ==>  Preparing: select * from user where username = ? and password = ? 
+2020-07-04 08:49:08.872 DEBUG 7992 --- [http-nio-8080-exec-6] c.w.m.U.selectUserByNameAndPassword      : ==> Parameters: wangli(String), 123(String)
+2020-07-04 08:49:08.961 DEBUG 7992 --- [http-nio-8080-exec-6] c.w.m.U.selectUserByNameAndPassword      : <==      Total: 1
+2020-07-04 08:49:12.709 DEBUG 7992 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 08:49:12.711 DEBUG 7992 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 08:49:12.722 DEBUG 7992 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 08:49:12.775 ERROR 7992 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "admin/tags": An error happened during template parsing (template: "class path resource [templates/admin/tags.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/tags.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "pageInfo.content" (template: "admin/tags" - line 64, col 15)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "pageInfo.content" (template: "admin/tags" - line 64, col 15)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'content' cannot be found on object of type 'com.github.pagehelper.PageInfo' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 70 common frames omitted
+
+2020-07-04 08:49:12.781 ERROR 7992 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/tags.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'content' cannot be found on object of type 'com.github.pagehelper.PageInfo' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-04 08:50:35.640  INFO 7992 --- [Thread-234] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 08:50:35.647  INFO 7992 --- [Thread-234] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-04 08:50:35.653  INFO 7992 --- [Thread-234] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-04 08:50:35.680  INFO 7992 --- [Thread-234] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-04 08:50:36.320  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 7992 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-04 08:50:36.322 DEBUG 7992 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-04 08:50:36.322  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-04 08:50:37.190  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-04 08:50:37.272  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 0 JPA repository interfaces.
+2020-07-04 08:50:38.113  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-04 08:50:38.119  INFO 7992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-04 08:50:38.120  INFO 7992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-04 08:50:38.424  INFO 7992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-04 08:50:38.425  INFO 7992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2094 ms
+2020-07-04 08:50:38.715  INFO 7992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-04 08:50:38.745  INFO 7992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-07-04 08:50:38.794  INFO 7992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-07-04 08:50:38.974  INFO 7992 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-04 08:50:38.997  INFO 7992 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-04 08:50:39.075  INFO 7992 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-04 08:50:39.077  INFO 7992 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 08:50:39.715  WARN 7992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-04 08:50:40.480  INFO 7992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-04 08:50:43.249  INFO 7992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-04 08:50:43.274  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-04 08:50:43.277  INFO 7992 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-04 08:50:43.279  INFO 7992 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-04 08:50:43.286  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 7.101 seconds (JVM running for 215.033)
+2020-07-04 08:50:43.290  INFO 7992 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-04 08:51:04.947  INFO 7992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-04 08:51:04.957  INFO 7992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-04 08:51:04.984  INFO 7992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-07-04 08:51:09.243 DEBUG 7992 --- [http-nio-8080-exec-9] c.w.m.U.selectUserByNameAndPassword      : ==>  Preparing: select * from user where username = ? and password = ? 
+2020-07-04 08:51:09.245 DEBUG 7992 --- [http-nio-8080-exec-9] c.w.m.U.selectUserByNameAndPassword      : ==> Parameters: wangli(String), 123(String)
+2020-07-04 08:51:09.255 DEBUG 7992 --- [http-nio-8080-exec-9] c.w.m.U.selectUserByNameAndPassword      : <==      Total: 1
+2020-07-04 08:51:11.210 DEBUG 7992 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 08:51:11.211 DEBUG 7992 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 08:51:11.214 DEBUG 7992 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 08:51:22.473 DEBUG 7992 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 08:51:22.474 DEBUG 7992 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 08:51:22.476 DEBUG 7992 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:12:57.413  INFO 7992 --- [Thread-241] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:12:57.415  INFO 7992 --- [Thread-241] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:12:57.416  INFO 7992 --- [Thread-241] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-07-04 09:12:57.435  INFO 7992 --- [Thread-241] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-07-04 09:12:57.917  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 7992 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-04 09:12:57.918 DEBUG 7992 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-04 09:12:57.918  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-04 09:12:58.746  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-04 09:12:58.870  INFO 7992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 0 JPA repository interfaces.
+2020-07-04 09:12:59.776  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-04 09:12:59.789  INFO 7992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-04 09:12:59.807  INFO 7992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-04 09:13:00.207  INFO 7992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-04 09:13:00.207  INFO 7992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2284 ms
+2020-07-04 09:13:00.450  INFO 7992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:13:00.494  INFO 7992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-07-04 09:13:00.535  INFO 7992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-07-04 09:13:00.730  INFO 7992 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-04 09:13:00.750  INFO 7992 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-04 09:13:00.822  INFO 7992 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-04 09:13:00.857  INFO 7992 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:13:01.198  WARN 7992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-04 09:13:01.529  INFO 7992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-04 09:13:04.018  INFO 7992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-04 09:13:04.039  INFO 7992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-04 09:13:04.041  INFO 7992 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-04 09:13:04.043  INFO 7992 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-04 09:13:04.049  INFO 7992 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 6.245 seconds (JVM running for 1555.794)
+2020-07-04 09:13:04.051  INFO 7992 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-04 09:13:38.876  INFO 7992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-04 09:13:38.877  INFO 7992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-04 09:13:38.907  INFO 7992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-07-04 09:13:42.923 DEBUG 7992 --- [http-nio-8080-exec-10] c.w.m.U.selectUserByNameAndPassword      : ==>  Preparing: select * from user where username = ? and password = ? 
+2020-07-04 09:13:42.925 DEBUG 7992 --- [http-nio-8080-exec-10] c.w.m.U.selectUserByNameAndPassword      : ==> Parameters: wangli(String), 123(String)
+2020-07-04 09:13:42.930 DEBUG 7992 --- [http-nio-8080-exec-10] c.w.m.U.selectUserByNameAndPassword      : <==      Total: 1
+2020-07-04 09:13:47.687 DEBUG 7992 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:13:47.688 DEBUG 7992 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:13:47.691 DEBUG 7992 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:14:06.677 ERROR 7992 --- [http-nio-8080-exec-8] c.wl.handler.ControllerExceptionHandler  : Request URL : http://localhost:8080/admin/tags, Exception {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:395)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1016)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-04 09:14:06.691  WARN 7992 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-07-04 09:15:39.394 DEBUG 7992 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:15:39.396 DEBUG 7992 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 生活随笔(String)
+2020-07-04 09:15:39.399 DEBUG 7992 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:15:39.400 DEBUG 7992 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:15:39.402 DEBUG 7992 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 生活随笔(String)
+2020-07-04 09:15:39.429 DEBUG 7992 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:15:39.489 DEBUG 7992 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:15:39.489 DEBUG 7992 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:15:39.498 DEBUG 7992 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:15:39.502 DEBUG 7992 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:15:39.503 DEBUG 7992 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:15:39.506 DEBUG 7992 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : <==      Total: 1
+2020-07-04 09:27:37.678  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 7060 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-04 09:27:37.685 DEBUG 7060 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-04 09:27:37.686  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-04 09:27:37.834  INFO 7060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-04 09:27:37.837  INFO 7060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-04 09:27:39.749  INFO 7060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-04 09:27:39.907  INFO 7060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122ms. Found 0 JPA repository interfaces.
+2020-07-04 09:27:41.981  INFO 7060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-04 09:27:41.997  INFO 7060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-04 09:27:41.997  INFO 7060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-04 09:27:42.708  INFO 7060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-04 09:27:42.708  INFO 7060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4870 ms
+2020-07-04 09:27:43.012  INFO 7060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:27:43.048  INFO 7060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-04 09:27:44.772  INFO 7060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-04 09:27:45.015  INFO 7060 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-04 09:27:45.263  INFO 7060 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-04 09:27:45.808  INFO 7060 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-04 09:27:46.160  INFO 7060 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-04 09:27:46.243  WARN 7060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-04 09:27:46.721  INFO 7060 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-04 09:27:46.744  INFO 7060 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:27:47.119  INFO 7060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-04 09:27:49.820  INFO 7060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-04 09:27:49.896  INFO 7060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-04 09:27:49.899  INFO 7060 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-04 09:27:49.901  INFO 7060 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-04 09:27:49.919  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 13.972 seconds (JVM running for 18.169)
+2020-07-04 09:28:04.658  INFO 7060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-04 09:28:04.659  INFO 7060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-04 09:28:04.705  INFO 7060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 42 ms
+2020-07-04 09:28:10.265 DEBUG 7060 --- [http-nio-8080-exec-10] c.w.m.U.selectUserByNameAndPassword      : ==>  Preparing: select * from user where username = ? and password = ? 
+2020-07-04 09:28:10.318 DEBUG 7060 --- [http-nio-8080-exec-10] c.w.m.U.selectUserByNameAndPassword      : ==> Parameters: wangli(String), 123(String)
+2020-07-04 09:28:10.345 DEBUG 7060 --- [http-nio-8080-exec-10] c.w.m.U.selectUserByNameAndPassword      : <==      Total: 1
+2020-07-04 09:28:13.056 DEBUG 7060 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:28:13.059 DEBUG 7060 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:28:13.064 DEBUG 7060 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:28:13.069 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:28:13.071 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:28:13.075 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagList       : <==      Total: 1
+2020-07-04 09:29:04.195 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:29:04.197 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 闲笔落字(String)
+2020-07-04 09:29:04.200 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:29:04.203 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:29:04.205 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 闲笔落字(String)
+2020-07-04 09:29:04.244 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:29:04.306 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:29:04.306 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:29:04.315 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:29:04.317 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:29:04.317 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:29:04.320 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : <==      Total: 2
+2020-07-04 09:29:25.638 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:29:25.640 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 开发日记(String)
+2020-07-04 09:29:25.644 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:29:25.647 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:29:25.649 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 开发日记(String)
+2020-07-04 09:29:25.670 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:29:25.708 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:29:25.710 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:29:25.874 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:29:25.875 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:29:25.876 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:29:25.882 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : <==      Total: 3
+2020-07-04 09:30:36.901 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:30:36.902 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 阅读感悟(String)
+2020-07-04 09:30:36.925 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:30:36.926 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:30:36.928 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 阅读感悟(String)
+2020-07-04 09:30:36.950 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:30:36.987 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:30:36.987 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:30:37.018 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:30:37.020 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:30:37.021 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:30:37.026 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : <==      Total: 4
+2020-07-04 09:30:54.279 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:30:54.282 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 小说推荐(String)
+2020-07-04 09:30:54.284 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:30:54.290 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:30:54.292 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 小说推荐(String)
+2020-07-04 09:30:54.309 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:30:54.330 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:30:54.331 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:30:54.342 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:30:54.343 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:30:54.344 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:30:54.346 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:32:18.767 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:32:18.768 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: BUG档案(String)
+2020-07-04 09:32:18.772 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:32:18.775 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:32:18.779 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: BUG档案(String)
+2020-07-04 09:32:18.805 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:32:18.826 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:32:18.827 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:32:18.839 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:32:18.840 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:32:18.840 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:32:18.845 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:32:18.892 ERROR 7060 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "admin/tags": An error happened during template parsing (template: "class path resource [templates/admin/tags.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/tags.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "pageInfo.pageNUm" (template: "admin/tags" - line 78, col 20)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "pageInfo.pageNUm" (template: "admin/tags" - line 78, col 20)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.AdditionExpression.executeAddition(AdditionExpression.java:89)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:62)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'pageNUm' cannot be found on object of type 'com.github.pagehelper.PageInfo' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 77 common frames omitted
+
+2020-07-04 09:32:18.902 ERROR 7060 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/admin/tags.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'pageNUm' cannot be found on object of type 'com.github.pagehelper.PageInfo' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.AdditionExpression.executeAddition(AdditionExpression.java:89)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:62)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-04 09:33:41.904 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:33:41.906 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: BUG档案(String)
+2020-07-04 09:33:41.909 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 1
+2020-07-04 09:33:46.591 DEBUG 7060 --- [http-nio-8080-exec-1] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:33:46.593 DEBUG 7060 --- [http-nio-8080-exec-1] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:33:46.622 DEBUG 7060 --- [http-nio-8080-exec-1] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:33:46.624 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:33:46.624 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:33:46.626 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:33:49.378 DEBUG 7060 --- [http-nio-8080-exec-3] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:33:49.379 DEBUG 7060 --- [http-nio-8080-exec-3] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:33:49.392 DEBUG 7060 --- [http-nio-8080-exec-3] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:33:49.393 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:33:49.393 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:33:49.396 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagList       : <==      Total: 1
+2020-07-04 09:33:52.134 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:33:52.135 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:33:52.139 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:33:52.140 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:33:52.141 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:33:52.146 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:35:35.203 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:35:35.204 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:35:35.226 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:35:35.227 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:35:35.228 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:35:35.232 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:35:44.916 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:35:44.917 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:35:44.921 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:35:44.922 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:35:44.923 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:35:44.925 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:35:50.471 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:35:50.473 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:35:50.478 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:35:50.479 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:35:50.479 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:35:50.483 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:42:22.913  INFO 7060 --- [Thread-223] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:42:22.919  INFO 7060 --- [Thread-223] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:42:22.924  INFO 7060 --- [Thread-223] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-04 09:42:22.945  INFO 7060 --- [Thread-223] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-07-04 09:42:23.632  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 7060 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-04 09:42:23.633 DEBUG 7060 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-04 09:42:23.633  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-04 09:42:24.874  INFO 7060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-04 09:42:24.970  INFO 7060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 0 JPA repository interfaces.
+2020-07-04 09:42:25.824  INFO 7060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-04 09:42:25.830  INFO 7060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-04 09:42:25.833  INFO 7060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-04 09:42:26.102  INFO 7060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-04 09:42:26.103  INFO 7060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2463 ms
+2020-07-04 09:42:26.395  INFO 7060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:42:26.448  INFO 7060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-07-04 09:42:26.482  INFO 7060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-07-04 09:42:26.557  INFO 7060 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-04 09:42:26.573  INFO 7060 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-04 09:42:26.624  INFO 7060 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-04 09:42:26.627  INFO 7060 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:42:27.121  WARN 7060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-04 09:42:27.537  INFO 7060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-04 09:42:30.035  INFO 7060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-04 09:42:30.061  INFO 7060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-04 09:42:30.064  INFO 7060 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-04 09:42:30.065  INFO 7060 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-04 09:42:30.070  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 6.581 seconds (JVM running for 898.32)
+2020-07-04 09:42:30.078  INFO 7060 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-04 09:42:40.200  INFO 7060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-04 09:42:40.201  INFO 7060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-04 09:42:40.236  INFO 7060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-07-04 09:42:44.557 DEBUG 7060 --- [http-nio-8080-exec-8] c.w.m.U.selectUserByNameAndPassword      : ==>  Preparing: select * from user where username = ? and password = ? 
+2020-07-04 09:42:44.558 DEBUG 7060 --- [http-nio-8080-exec-8] c.w.m.U.selectUserByNameAndPassword      : ==> Parameters: wangli(String), 123(String)
+2020-07-04 09:42:44.565 DEBUG 7060 --- [http-nio-8080-exec-8] c.w.m.U.selectUserByNameAndPassword      : <==      Total: 1
+2020-07-04 09:42:46.430 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:42:46.431 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:42:46.442 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:42:46.443 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:42:46.444 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:42:46.446 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:42:50.649 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagById       : ==>  Preparing: select * from tag where id = ? 
+2020-07-04 09:42:50.652 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagById       : ==> Parameters: 5(Long)
+2020-07-04 09:42:50.654 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagById       : <==      Total: 1
+2020-07-04 09:43:01.448  WARN 7060 --- [http-nio-8080-exec-5] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-07-04 09:43:01.485 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:43:01.487 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 小说推荐(String)
+2020-07-04 09:43:01.501 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 1
+2020-07-04 09:43:34.044  WARN 7060 --- [http-nio-8080-exec-8] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-07-04 09:43:34.048 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:43:34.050 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 网文推荐(String)
+2020-07-04 09:43:34.051 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:43:34.054 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:43:34.055 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 网文推荐(String)
+2020-07-04 09:43:34.073 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:43:34.121 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:43:34.123 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:43:34.140 DEBUG 7060 --- [http-nio-8080-exec-6] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:43:34.141 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:43:34.141 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:43:34.144 DEBUG 7060 --- [http-nio-8080-exec-6] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:43:37.669 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:43:37.679 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:43:37.699 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:43:37.700 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:43:37.701 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:43:37.703 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : <==      Total: 2
+2020-07-04 09:43:40.055 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:43:40.056 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:43:40.065 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:43:40.067 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:43:40.068 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:43:40.070 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:43:46.628 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagById       : ==>  Preparing: select * from tag where id = ? 
+2020-07-04 09:43:46.630 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagById       : ==> Parameters: 5(Long)
+2020-07-04 09:43:46.633 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagById       : <==      Total: 1
+2020-07-04 09:43:57.817  WARN 7060 --- [http-nio-8080-exec-2] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-07-04 09:43:57.819 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:43:57.820 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 动漫推荐(String)
+2020-07-04 09:43:57.824 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:43:57.827 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.saveTag          : ==>  Preparing: insert into tag (name) values(?) 
+2020-07-04 09:43:57.827 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.saveTag          : ==> Parameters: 动漫推荐(String)
+2020-07-04 09:43:57.840 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.saveTag          : <==    Updates: 1
+2020-07-04 09:43:57.867 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:43:57.868 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:43:57.871 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:43:57.872 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:43:57.873 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:43:57.875 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:44:00.691 DEBUG 7060 --- [http-nio-8080-exec-1] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:44:00.692 DEBUG 7060 --- [http-nio-8080-exec-1] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:44:00.709 DEBUG 7060 --- [http-nio-8080-exec-1] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:44:00.711 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:44:00.711 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:44:00.712 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.getTagList       : <==      Total: 3
+2020-07-04 09:44:46.817  INFO 7060 --- [Thread-230] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:44:46.819  INFO 7060 --- [Thread-230] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:44:46.820  INFO 7060 --- [Thread-230] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-07-04 09:44:46.832  INFO 7060 --- [Thread-230] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-07-04 09:44:47.254  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : Starting BlogApplication on DESKTOP-AF8ALAG with PID 7060 (C:\Users\王利\IdeaProjects\blog\target\classes started by wangli in C:\Users\王利\IdeaProjects\blog)
+2020-07-04 09:44:47.255 DEBUG 7060 --- [restartedMain] com.wl.BlogApplication                   : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-04 09:44:47.255  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : The following profiles are active: dev
+2020-07-04 09:44:47.904  INFO 7060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-04 09:44:47.976  INFO 7060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 0 JPA repository interfaces.
+2020-07-04 09:44:48.522  INFO 7060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-04 09:44:48.524  INFO 7060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-04 09:44:48.524  INFO 7060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-04 09:44:48.702  INFO 7060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-04 09:44:48.702  INFO 7060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2020-07-04 09:44:48.849  INFO 7060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-04 09:44:48.867  INFO 7060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-07-04 09:44:48.890  INFO 7060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-07-04 09:44:48.952  INFO 7060 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-04 09:44:48.960  INFO 7060 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-04 09:44:48.985  INFO 7060 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-04 09:44:48.986  INFO 7060 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-04 09:44:49.318  WARN 7060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-04 09:44:49.638  INFO 7060 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-04 09:44:52.206  INFO 7060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-04 09:44:52.243  INFO 7060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-04 09:44:52.244  INFO 7060 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-04 09:44:52.245  INFO 7060 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-04 09:44:52.250  INFO 7060 --- [restartedMain] com.wl.BlogApplication                   : Started BlogApplication in 5.095 seconds (JVM running for 1040.5)
+2020-07-04 09:44:52.259  INFO 7060 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-04 09:45:17.939  INFO 7060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-04 09:45:17.945  INFO 7060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-04 09:45:17.974  INFO 7060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-07-04 09:45:22.564 DEBUG 7060 --- [http-nio-8080-exec-8] c.w.m.U.selectUserByNameAndPassword      : ==>  Preparing: select * from user where username = ? and password = ? 
+2020-07-04 09:45:22.566 DEBUG 7060 --- [http-nio-8080-exec-8] c.w.m.U.selectUserByNameAndPassword      : ==> Parameters: wangli(String), 123(String)
+2020-07-04 09:45:22.574 DEBUG 7060 --- [http-nio-8080-exec-8] c.w.m.U.selectUserByNameAndPassword      : <==      Total: 1
+2020-07-04 09:45:24.986 DEBUG 7060 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:45:24.988 DEBUG 7060 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:45:25.001 DEBUG 7060 --- [http-nio-8080-exec-9] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:45:25.003 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:45:25.003 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:45:25.006 DEBUG 7060 --- [http-nio-8080-exec-9] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:45:32.088 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:45:32.090 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:45:32.104 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:45:32.106 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:45:32.108 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:45:32.110 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 3
+2020-07-04 09:45:34.067 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.deleteTag        : ==>  Preparing: delete from tag where id = ? 
+2020-07-04 09:45:34.070 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.deleteTag        : ==> Parameters: 8(Long)
+2020-07-04 09:45:34.090 DEBUG 7060 --- [http-nio-8080-exec-1] com.wl.mapper.TagMapper.deleteTag        : <==    Updates: 1
+2020-07-04 09:45:34.138 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:45:34.138 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:45:34.166 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:45:34.167 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:45:34.167 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:45:34.169 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:45:36.291 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:45:36.293 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:45:36.296 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:45:36.296 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:45:36.297 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:45:36.299 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 2
+2020-07-04 09:45:38.526 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagById       : ==>  Preparing: select * from tag where id = ? 
+2020-07-04 09:45:38.527 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagById       : ==> Parameters: 7(Long)
+2020-07-04 09:45:38.533 DEBUG 7060 --- [http-nio-8080-exec-2] com.wl.mapper.TagMapper.getTagById       : <==      Total: 1
+2020-07-04 09:46:15.989  WARN 7060 --- [http-nio-8080-exec-3] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-07-04 09:46:16.034 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagByName     : ==>  Preparing: select * from tag where name = ? 
+2020-07-04 09:46:16.035 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagByName     : ==> Parameters: 个人计划(String)
+2020-07-04 09:46:16.038 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.getTagByName     : <==      Total: 0
+2020-07-04 09:46:16.039 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.updateTag        : ==>  Preparing: update tag set name = ? where id = ? 
+2020-07-04 09:46:16.040 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.updateTag        : ==> Parameters: 个人计划(String), 7(Long)
+2020-07-04 09:46:16.071 DEBUG 7060 --- [http-nio-8080-exec-3] com.wl.mapper.TagMapper.updateTag        : <==    Updates: 1
+2020-07-04 09:46:16.095 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:16.095 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:16.107 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:16.109 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:46:16.110 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:46:16.112 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:46:18.295 DEBUG 7060 --- [http-nio-8080-exec-7] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:18.296 DEBUG 7060 --- [http-nio-8080-exec-7] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:18.300 DEBUG 7060 --- [http-nio-8080-exec-7] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:18.300 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:46:18.301 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:46:18.304 DEBUG 7060 --- [http-nio-8080-exec-7] com.wl.mapper.TagMapper.getTagList       : <==      Total: 2
+2020-07-04 09:46:20.867 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:20.868 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:20.870 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:20.871 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:46:20.872 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:46:20.874 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:46:23.169 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:23.170 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:23.173 DEBUG 7060 --- [http-nio-8080-exec-10] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:23.173 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:46:23.174 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:46:23.175 DEBUG 7060 --- [http-nio-8080-exec-10] com.wl.mapper.TagMapper.getTagList       : <==      Total: 2
+2020-07-04 09:46:25.069 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:25.071 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:25.080 DEBUG 7060 --- [http-nio-8080-exec-4] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:25.080 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:46:25.081 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:46:25.083 DEBUG 7060 --- [http-nio-8080-exec-4] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:46:33.232 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:33.233 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:33.237 DEBUG 7060 --- [http-nio-8080-exec-5] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:33.237 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ? 
+2020-07-04 09:46:33.238 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer)
+2020-07-04 09:46:33.240 DEBUG 7060 --- [http-nio-8080-exec-5] com.wl.mapper.TagMapper.getTagList       : <==      Total: 5
+2020-07-04 09:46:41.768 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2020-07-04 09:46:41.769 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : ==> Parameters: 
+2020-07-04 09:46:41.781 DEBUG 7060 --- [http-nio-8080-exec-8] c.wl.mapper.TagMapper.getTagList_COUNT   : <==      Total: 1
+2020-07-04 09:46:41.783 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : ==>  Preparing: select * from tag LIMIT ?, ? 
+2020-07-04 09:46:41.785 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : ==> Parameters: 5(Integer), 5(Integer)
+2020-07-04 09:46:41.787 DEBUG 7060 --- [http-nio-8080-exec-8] com.wl.mapper.TagMapper.getTagList       : <==      Total: 2
