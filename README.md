@@ -6,4 +6,4 @@
 
 * 首页展示<br>
 
-  ![images](./images/indexshow.png)
+![images](./images/indexshow.png)
