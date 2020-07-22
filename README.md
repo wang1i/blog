@@ -6,4 +6,4 @@
 
 * 首页展示<br>
 
-  ![images](https://github.com/wang1i/blog/blob/master/images/indexshow.png)
+  ![images](./images/indexshow.png)
