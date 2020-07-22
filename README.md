@@ -1,6 +1,10 @@
 # SpringBoot个人博客
+
 * `技术栈：springboot mybatis thymeleaf mysql` <br>
-<br>
+
 
 ## 页面效果
-详情见效果图
+
+* 首页展示<br>
+
+![images](https://github.com/wang1i/blog/blob/master/images/indexshow.png)
